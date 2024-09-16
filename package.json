@@ -1,0 +1,38 @@
+{
+    "name": "vite-sitemap-router",
+    "version": "1.0.0",
+    "type": "module",
+    "private": true,
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "exports": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+    },
+    "scripts": {
+        "build": "npm i -s && rm -rf dist && tsup-node src/index.ts --silent --sourcemap --dts --format esm,cjs",
+        "lint": "npm i -s && eslint . --max-warnings 0 --cache",
+        "lint:fix": "npm run lint -- --fix"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.10.0",
+        "@happy-dom/global-registrator": "^15.7.3",
+        "@types/eslint__js": "^8.42.3",
+        "@types/node": "^22.5.4",
+        "@typescript-eslint/eslint-plugin": "^8.5.0",
+        "@typescript-eslint/parser": "^8.5.0",
+        "eslint": "^9.10.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-prettier": "^5.2.1",
+        "prettier": "^3.3.3",
+        "rollup": "^4.21.2",
+        "tsup": "^8.2.4",
+        "typescript": "^5.5.4",
+        "typescript-eslint": "^8.5.0",
+        "vite": "*",
+        "vue-router": "*"
+    }
+}
