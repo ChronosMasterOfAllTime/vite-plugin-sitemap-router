@@ -41,7 +41,7 @@ export const sitemapPlugin = ({
   filter,
   appUrl
 }: PluginOptions): Plugin => ({
-  name: 'vite-sitemap-router',
+  name: 'vite-plugin-sitemap-router',
   apply: 'build',
   writeBundle: async function (outputOptions, bundle) {
     // Mocking window object in Node.js

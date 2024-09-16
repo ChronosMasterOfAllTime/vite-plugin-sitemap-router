@@ -32,7 +32,7 @@ var sitemapPlugin = ({
   filter,
   appUrl
 }) => ({
-  name: "vite-sitemap-router",
+  name: "vite-plugin-sitemap-router",
   apply: "build",
   writeBundle: async function(outputOptions, bundle) {
     if (!global.window) {
