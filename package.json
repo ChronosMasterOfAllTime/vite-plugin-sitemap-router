@@ -1,6 +1,6 @@
 {
     "name": "vite-plugin-sitemap-router",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "type": "module",
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
@@ -16,9 +16,11 @@
         "lint": "npm i -s && eslint . --max-warnings 0 --cache",
         "lint:fix": "npm run lint -- --fix"
     },
+    "dependencies": {
+        "@happy-dom/global-registrator": "^15.7.3"
+    },
     "devDependencies": {
         "@eslint/js": "^9.10.0",
-        "@happy-dom/global-registrator": "^15.7.3",
         "@types/eslint__js": "^8.42.3",
         "@types/node": "^22.5.4",
         "@typescript-eslint/eslint-plugin": "^8.5.0",
