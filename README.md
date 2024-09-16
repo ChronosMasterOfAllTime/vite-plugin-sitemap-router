@@ -16,25 +16,25 @@ This directory contains the source code for various web plugins used in our proj
 To get started with the development of these plugins, follow the steps below:
 
 1. **Install Dependencies**:
-    ```sh
+```sh
     npm install
-    ```
+```
 
 2. **Build the Plugins**:
-    ```sh
+```sh
     npm run build
-    ```
+```
 
 3. **Run Lint**:
-    ```sh
+```sh
     npm run lint
-    ```
+```
 
 ## Usage
     This is intended to be used in the `vite.config.(ts|js)` file. The following is an example of how to use the plugin:
 
 ### By direct route definition
-    ```ts
+```ts
     import { defineConfig } from 'vite';
     import { sitemapPlugin } from './web/plugins';
 
@@ -66,11 +66,11 @@ To get started with the development of these plugins, follow the steps below:
         ]
        // ...other vite config below...
     });
-    ```
+```
 
 ### By router file
 
-    ```ts 
+```ts 
     import { defineConfig } from 'vite';
     import { sitemapPlugin } from './web/plugins';
 
@@ -83,7 +83,7 @@ To get started with the development of these plugins, follow the steps below:
         ]
        // ...other vite config below...
     });
-    ```
+```
 
 ### Options
 
