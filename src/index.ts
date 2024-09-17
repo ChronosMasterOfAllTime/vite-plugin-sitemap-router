@@ -30,7 +30,7 @@ interface PluginOptions {
   appUrl?: string
   /**
    * The path of the output file.
-   * @defaulßt (build.outDir || 'dist/') + 'sitemap.xml'
+   * @default (build.outDir || 'dist/') + 'sitemap.xml'
    */
   outfile?: string
 }

@@ -110,6 +110,7 @@ interface PluginOptions {
   filter?: (route?: RouteInput) => boolean
   /**
    * The URL of the application.
+   * @default 'http://localhost'
    */
   appUrl?: string
   /**
