@@ -25,11 +25,12 @@ interface PluginOptions {
   filter?: (route?: RouteInput) => boolean
   /**
    * The URL of the application.
+   * @default 'http://localhost'
    */
   appUrl?: string
   /**
    * The path of the output file.
-   * @default (build.outDir || 'dist/') + 'sitemap.xml'
+   * @defaulßt (build.outDir || 'dist/') + 'sitemap.xml'
    */
   outfile?: string
 }
@@ -48,6 +49,8 @@ export const sitemapPlugin = ({
     if (!global.window) {
       GlobalRegistrator.register()
     }
+
+    if (!appUrl) appUrl = 'http://localhost'
 
     let resolvedRoutes: Array<RouteInput> = []
 
